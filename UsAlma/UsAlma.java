@@ -1,31 +1,20 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
-package com.mycompany.burc;
-
-import java.util.Scanner;
-/**
- *
- * @author serdar
- */
-public class Burc {
+public class Main {
 
     public static void main(String[] args) {
-        int taban, us, sonuc = 1;
+        int number, power, result = 1;
         
         Scanner input = new Scanner(System.in);
         
         System.out.print("Taban: ");
-        taban = input.nextInt();
+        number = input.nextInt();
         
         System.out.print("Us: ");
-        us = input.nextInt();
+        power = input.nextInt();
         
-        for(int i = 0; i < us; i++){
-            sonuc = sonuc * taban;
+        for(int i = 0; i < power; i++){
+            result = result * number;
         }
         
-        System.out.println(sonuc);
+        System.out.println(result);
     }
 }
